@@ -1,0 +1,159 @@
+:root {
+    --animation-time: 3s;
+    --top: 10%;
+    --right: 10%;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.intro {
+  /* background: url(../assets/overlay.png), url(../assets/space1.jpg); */
+  background: rgb(23, 30, 38);
+  background: linear-gradient(190deg, #01091b 0%, #1a0a46 100%);
+  /* background-size: 256px 256px, cover; */
+  /* background-attachment: fixed, fixed;
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat; */
+  width: 100%;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.fullscreen {
+  min-height: 100%;
+}
+
+#particles-js {
+  flex: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  color: white;
+  align-items: center;
+  width: 45em;
+  max-width: calc(100% - 4em);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content p {
+  font-size: 16px;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+.night {
+  position: absolute;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#shooting-star {
+    display: inline-block;
+  position: absolute;
+  right: var(--right);
+  top: var(--top);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(95, 145, 255, 1),
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 999px;
+  transform: translate3d(0px, 0px, 0px) rotateZ(135deg);
+  filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+  animation: tail var(--animation-time) ease-in-out infinite,
+    shooting var(--animation-time) ease-in-out infinite;
+}
+#shooting-star::before {
+    display: inline-block;
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  /* // width: 30px; */
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    rgba(95, 145, 255, 1),
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 3000ms ease-in-out infinite;
+}
+
+#shooting-star::after {
+    display: inline-block;
+  content: "";
+  position: absolute;
+  /* top: calc(50% - 1px); */
+  right: 0;
+  /* // width: 30px; */
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    rgba(95, 145, 255, 1),
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  animation: shining 3000ms ease-in-out infinite;
+}
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 100px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 30px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotateZ(135deg);
+
+  }
+
+  100% {
+    /* transform: translateX(-80vw) translateY(80vw); */
+    transform: translate3d(-35vw, 35vw, 0px) rotateZ(135deg);
+  }
+}
+
+/* https://css-tricks.com/css-keyframe-animation-delay-iterations/ */
