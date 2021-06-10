@@ -16,99 +16,58 @@
         <!-- Nav bar -->
         <nav></nav>
         <!-- intro -->
-        <div class="background fullscreen">
+        <div class="intro fullscreen">
             <div class="content">
-                <div class="intro">
-                    <h1>❤️ Happy Birthday My Dear! ❤️</h1>
-                    <p>
-                        I hope you will have a wonderfull birthday! I'm sorry I
-                        cant be there but know that I love you very much! I love
-                        you more than the moon and the stars! I made this
-                        website as a gift to you, I hope you like it! It shows
-                        some of my favourite places that we have been together
-                        in the
-                        <span id="d"></span> days <span id="h"></span> hours
-                        <span id="min"></span> minutes
-                        <span id="s"></span> seconds that we have been to
-                        together. Let's go to even more places in the future!
-                        <br />
-                        Love, your Cheeseball.
-                    </p>
-                    <!-- Music -->
-                    <div class="music-container">
-                        <div class="music">
-                            <p>
-                                Chasing Cars <br />
-                                Snow Patrol
-                            </p>
-                            <audio class="player" controls loop preload="auto">
-                                <source
-                                    src="assets/chasing-cars.mp3"
-                                    type="audio/mpeg"
-                                />
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </div>
-                        <div class="music">
-                            <p>
-                                Can't Help Falling In Love <br />
-                                Kina Grannis
-                            </p>
-                            <audio class="player" controls loop preload="auto">
-                                <source
-                                    src="assets/cant-help-falling-in-love.mp3"
-                                    type="audio/mpeg"
-                                />
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </div>
-                        <script>
-                            var players =
-                                document.getElementsByClassName("player");
-                            console.log(players);
-                            Object.values(players).forEach((player) => {
-                                player.volume = 0.1;
-                            });
-                        </script>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="section-content">
-                        <div class="map-container">
-                            <img
-                                class="map"
-                                src="assets/hufs-circle.png"
-                                alt="circle map of hufs university"
+                <h1>❤️ Happy Birthday My Dear! ❤️</h1>
+                <p>
+                    I hope you will have a wonderfull birthday! I'm sorry I cant
+                    be there but know that I love you very much! I love you more
+                    than the moon and the stars! I made this website as a gift
+                    to you, I hope you like it! It shows some of my favourite
+                    places that we have been together in the
+                    <span id="d"></span> days <span id="h"></span> hours
+                    <span id="min"></span> minutes <span id="s"></span> seconds
+                    that we have been to together. Let's go to even more places
+                    in the future! <br />
+                    Love, your Cheeseball.
+                </p>
+                <!-- Music -->
+                <div class="music-container">
+                    <div class="music">
+                        <p>
+                            Chasing Cars <br />
+                            Snow Patrol
+                        </p>
+                        <audio class="player" controls loop preload="auto">
+                            <source
+                                src="assets/chasing-cars.mp3"
+                                type="audio/mpeg"
                             />
-                        </div>
-                        <div class="text-container">
-                            <h1>Hankuk University of Foreign Studies</h1>
-                            <p>
-                                This is where it all begon. We met while both
-                                attending the spring/summer semester at Hufs.
-                            </p>
-                        </div>
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="section-content reverse">
-                        <div class="map-container">
-                            <img
-                                class="map"
-                                src="assets/mikes-cabin-circle.png"
-                                alt="circle map of mike's cabin"
+                    <div class="music">
+                        <p>
+                            Can't Help Falling In Love <br />
+                            Kina Grannis
+                        </p>
+                        <audio class="player" controls loop preload="auto">
+                            <source
+                                src="assets/cant-help-falling-in-love.mp3"
+                                type="audio/mpeg"
                             />
-                        </div>
-                        <div class="text-container">
-                            <h1>Mike's Cabin</h1>
-                            <p>
-                                This is where it all begon. We met while both
-                                attending the spring/summer semester at Hufs.
-                            </p>
-                        </div>
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
                     </div>
+                    <script>
+                        var players = document.getElementsByClassName("player");
+                        console.log(players);
+                        Object.values(players).forEach((player) => {
+                            player.volume = 0.1;
+                        });
+                    </script>
                 </div>
             </div>
             <div id="stars" class="particles-js"></div>
@@ -117,7 +76,43 @@
             </div>
         </div>
         <!-- Section hufs -->
-
+        <div class="section">
+            <div class="section-content">
+                <div class="map-container">
+                    <img
+                        class="map"
+                        src="assets/hufs-circle.png"
+                        alt="circle map of hufs university"
+                    />
+                </div>
+                <div class="text-container">
+                    <h1>Hankuk University of Foreign Studies</h1>
+                    <p>
+                        This is where it all begon. We met while both attending
+                        the spring/summer semester at Hufs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-content purple reverse">
+                <div class="map-container">
+                    <img
+                        class="map"
+                        src="assets/mikes-cabin-circle.png"
+                        alt="circle map of mike's cabin"
+                    />
+                </div>
+                <div class="text-container">
+                    <h1>Mike's Cabin</h1>
+                    <p>
+                        This is where it all begon. We met while both attending
+                        the spring/summer semester at Hufs.
+                    </p>
+                </div>
+            </div>
+            <div id="stars2" class="particles-js"></div>
+        </div>
         <!-- Scripts -->
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="stars.js"></script>
