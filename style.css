@@ -12,7 +12,7 @@
     width: 100%;
 }
 
-.intro {
+.background {
     background: rgb(23, 30, 38);
     background: linear-gradient(190deg, #01091b 0%, #1a0a46 100%);
     width: 100%;
@@ -21,10 +21,10 @@
 }
 
 .fullscreen {
-    min-height: 100%;
+    min-height: 100vh;
 }
 
-.content {
+.intro {
     color: white;
     justify-content: center;
     width: 45em;
@@ -41,7 +41,7 @@ p {
     line-height: 30px;
 }
 
-.content h1 {
+.intro h1 {
     margin-bottom: 30px;
     font-size: 55px;
     font-family: "Dancing Script", cursive;
@@ -74,14 +74,17 @@ p {
     padding: 50px;
     box-sizing: border-box;
     justify-content: center;
+    color: white;
 }
 
 .section-content h1 {
     margin-bottom: 30px;
 }
 
-.section-content.reverse {
+.section-content.white {
     flex-direction: row-reverse;
+    background-color: white;
+    color: black;
 }
 
 .map-container {
@@ -91,13 +94,8 @@ p {
     max-width: 40%;
 }
 
-.section-content.reverse > .map-container {
+.section-content.white > .map-container {
     align-items: flex-end;
-}
-
-.section-content.purple {
-    background-color: #1a0a46;
-    color: white;
 }
 
 .map {
