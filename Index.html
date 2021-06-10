@@ -9,15 +9,17 @@
             href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="stars.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/stars.css" />
+        <link rel="stylesheet" href="css/heart.css" />
     </head>
     <body>
         <!-- Nav bar -->
         <nav></nav>
-        <!-- intro -->
+
         <div class="background fullscreen">
             <div class="content">
+                <!-- intro -->
                 <div class="intro fullscreen">
                     <h1>❤️ Happy Birthday My Dear! ❤️</h1>
                     <p>
@@ -41,7 +43,13 @@
                                 Chasing Cars <br />
                                 Snow Patrol
                             </p>
-                            <audio class="player" controls loop preload="auto">
+                            <audio
+                                class="player"
+                                controls
+                                loop
+                                autoplay
+                                preload="auto"
+                            >
                                 <source
                                     src="assets/chasing-cars.mp3"
                                     type="audio/mpeg"
@@ -64,6 +72,7 @@
                                 <code>audio</code> element.
                             </audio>
                         </div>
+                        <!-- Music volume script -->
                         <script>
                             var players =
                                 document.getElementsByClassName("player");
@@ -74,6 +83,7 @@
                         </script>
                     </div>
                 </div>
+                <!-- Hankuk University of Foreign Studies -->
                 <div class="section-content white">
                     <div class="map-container">
                         <img
@@ -90,6 +100,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- Mike's Cabin -->
                 <div class="section-content">
                     <div class="map-container">
                         <img
@@ -106,85 +117,31 @@
                         </p>
                     </div>
                 </div>
-                <div class="section-content white">
-                    <div class="map-container">
-                        <img
-                            class="map"
-                            src="assets/hufs-circle.png"
-                            alt="circle map of hufs university"
-                        />
-                    </div>
-                    <div class="text-container">
-                        <h1>Hankuk University of Foreign Studies</h1>
-                        <p>
-                            This is where it all begon. We met while both
-                            attending the spring/summer semester at Hufs.
-                        </p>
-                    </div>
-                </div>
-                <div class="section-content">
-                    <div class="map-container">
-                        <img
-                            class="map"
-                            src="assets/mikes-cabin-circle.png"
-                            alt="circle map of mike's cabin"
-                        />
-                    </div>
-                    <div class="text-container">
-                        <h1>Mike's Cabin</h1>
-                        <p>
-                            This is where it all begon. We met while both
-                            attending the spring/summer semester at Hufs.
-                        </p>
-                    </div>
+                <!-- My House -->
+                <div></div>
+                <!-- Elly's studio appartment -->
+                <div></div>
+                <!-- Hearth animation -->
+                <div class="section fullscreen">
+                    <div id="heart" class="heart"></div>
+                    <div class="heart throb"></div>
+                    <div id="pulse" class="heart"></div>
+
+                    <h2 class="heart-text">
+                        My heart beats for you. <br />Click it.
+                    </h2>
                 </div>
             </div>
+            <!-- Stars animations -->
             <div id="stars" class="particles-js"></div>
             <div class="night">
                 <div id="shooting-star"></div>
             </div>
         </div>
-        <!-- Section hufs -->
-        <!-- <div class="section">
-            <div class="section-content">
-                <div class="map-container">
-                    <img
-                        class="map"
-                        src="assets/hufs-circle.png"
-                        alt="circle map of hufs university"
-                    />
-                </div>
-                <div class="text-container">
-                    <h1>Hankuk University of Foreign Studies</h1>
-                    <p>
-                        This is where it all begon. We met while both attending
-                        the spring/summer semester at Hufs.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="section-content purple reverse">
-                <div class="map-container">
-                    <img
-                        class="map"
-                        src="assets/mikes-cabin-circle.png"
-                        alt="circle map of mike's cabin"
-                    />
-                </div>
-                <div class="text-container">
-                    <h1>Mike's Cabin</h1>
-                    <p>
-                        This is where it all begon. We met while both attending
-                        the spring/summer semester at Hufs.
-                    </p>
-                </div>
-            </div>
-            <div id="stars2" class="particles-js"></div>
-        </div> -->
         <!-- Scripts -->
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="stars.js"></script>
-        <script src="date.js"></script>
+        <script src="js/stars.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/heart.js"></script>
     </body>
 </html>

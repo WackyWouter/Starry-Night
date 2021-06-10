@@ -24,6 +24,11 @@
     min-height: 100vh;
 }
 
+.content {
+    width: 100%;
+    z-index: 2;
+}
+
 .intro {
     color: white;
     justify-content: center;
@@ -33,7 +38,6 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    z-index: 2;
 }
 
 p {
@@ -113,14 +117,14 @@ p {
     }
 
     .section-content,
-    .section-content.reverse {
+    .section-content.white {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
 
     .map-container,
-    .section-content.reverse > .map-container,
+    .section-content.white > .map-container,
     .text-container {
         max-width: 75%;
         align-items: center;
@@ -139,7 +143,7 @@ p {
     }
 
     .map-container,
-    .section-content.reverse > .map-container,
+    .section-content.white > .map-container,
     .text-container {
         max-width: 100%;
     }
