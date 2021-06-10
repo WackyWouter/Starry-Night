@@ -75,7 +75,7 @@ p {
     display: flex;
     width: 100%;
     flex-direction: row;
-    padding: 50px;
+    padding: 100px 50px;
     box-sizing: border-box;
     justify-content: center;
     color: white;
@@ -103,13 +103,19 @@ p {
 }
 
 .map {
-    max-width: 80%;
+    max-width: 65%;
 }
 .text-container {
     max-width: 40%;
 }
 
 /* MediaQueries */
+@media only screen and (max-width: 1024px) {
+    .map {
+        max-width: 80%;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .music-container {
         flex-direction: column;
@@ -136,10 +142,14 @@ p {
 }
 
 @media only screen and (max-width: 490px) {
+    .intro > h1 {
+        margin-top: 50px;
+    }
+
     .music-container {
         flex-direction: column;
         gap: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .map-container,
