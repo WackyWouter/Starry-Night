@@ -1,23 +1,30 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 0.025em;
 }
 
-.intro {
+.particles-js {
+    flex: 1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.background {
     background: rgb(23, 30, 38);
     background: linear-gradient(190deg, #01091b 0%, #1a0a46 100%);
     width: 100%;
-    display: -ms-flex;
-    display: -webkit-flex;
     display: flex;
+    overflow: hidden;
 }
 
 .fullscreen {
     min-height: 100%;
 }
 
-.content {
+.intro {
     color: white;
     justify-content: center;
     width: 45em;
@@ -29,18 +36,19 @@
     z-index: 2;
 }
 
-.content p {
-    margin-top: 20px;
+p {
     font-size: 20px;
     line-height: 30px;
 }
 
-.content h1 {
+.intro h1 {
+    margin-bottom: 30px;
     font-size: 55px;
     font-family: "Dancing Script", cursive;
 }
 
 .music-container {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,10 +59,51 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    gap: 20px;
+}
+
+#hearts {
+    position: absolute;
 }
 
 .section {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    color: white;
+}
+
+.section-content {
     display: flex;
     width: 100%;
-    min-height: 100%;
+    flex-direction: row;
+    padding: 50px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.section-content h1 {
+    margin-bottom: 30px;
+}
+
+.section-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%;
+}
+
+.section-content.reverse > .map-container {
+    align-items: flex-end;
+}
+
+.map {
+    max-width: 80%;
+}
+.text-container {
+    max-width: 40%;
 }

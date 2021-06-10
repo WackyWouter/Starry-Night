@@ -3,13 +3,6 @@
     --right: 10%;
 }
 
-#particles-js {
-    flex: 1;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-}
-
 .night {
     position: absolute;
     flex: 1;

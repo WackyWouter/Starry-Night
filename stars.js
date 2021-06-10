@@ -6,7 +6,7 @@ setInterval(() => {
     shootingStar.style.setProperty("--right", right + "%");
 }, 6000);
 
-particlesJS("particles-js", {
+particlesJS("stars", {
     particles: {
         number: {
             value: 355,
