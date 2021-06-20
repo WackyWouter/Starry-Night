@@ -116,7 +116,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) {
     .music-container {
         flex-direction: column;
         gap: 30px;
@@ -138,6 +138,10 @@ p {
 
     .map {
         width: 65%;
+    }
+
+    .text-container {
+        text-align: center;
     }
 }
 
